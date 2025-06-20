@@ -1,0 +1,3 @@
+Useful scripts... 
+set environments
+tail.ps1
