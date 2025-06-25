@@ -1,10 +1,9 @@
 param (
-	[string] $file,
-	[int] $lines=10
+	[string] $file
 )
 
 if ($PSBoundParameters.ContainsKey('file')) {
-  Get-Content -Path $file -Tail $lines -Wait
+  Get-Content $file | more
 } else {
    Write-Output "What file to tail?"
 }
